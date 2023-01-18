@@ -1,0 +1,618 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgba(255, 255, 255, 1);
+	width: 100%;
+	font-family: Poppins;
+	display: inline-block;
+	overflow-x: hidden;
+}
+
+.Navbar-header {
+	background-color: #292a3a;
+	width: 100%;
+	height: 153px;
+}
+
+/*--------------> CSS del Logo <---------*/
+.logo {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	/*background-image: url(/images/logo_gim_1.png);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo img {
+	/*width: 220x;*/
+	height: 150px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+/*--------------> CSS del NavLink la botonera <---------*/
+.Navlinks-menu {
+	width: 860px;
+	height: 45px;
+	position: absolute;
+	left: 245px;
+	top: 90px;
+}
+
+span a {
+	text-decoration: none;
+	color: #fff4f4;
+	font-size: 16px;
+}
+
+span a:hover {
+	font-size: 16px;
+	color: #292a3a;
+}
+
+.btn-inicio {
+	width: 85px;
+	height: 30px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.btn-i {
+	width: 49px;
+	height: 18px;
+	position: relative;
+	padding: 0.5em 1.2em;
+	transition: all 1s ease;
+}
+
+.linea-0 {
+	background-color: #e1523d;
+	width: 100%;
+	height: 5px;
+	padding: 0;
+}
+
+.btn-i:hover,
+.btn-g:hover,
+.btn-a:hover,
+.btn-n:hover,
+.btn-c:hover {
+	background: #fff4f4;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.btn-galeria {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	left: 115px;
+	top: 10px;
+}
+
+.btn-g {
+	width: 63px;
+	height: 30px;
+	position: relative;
+	left: 5px;
+	padding: 0.5em 1.2em;
+	transition: all 1s ease;
+}
+
+
+.btn-actividades {
+	width: 112px;
+	height: 30px;
+	position: absolute;
+	left: 238px;
+	top: 10px;
+}
+
+.btn-a {
+	width: 102px;
+	height: 24px;
+	position: relative;
+	padding: 0.5em 1.2em;
+	transition: all 1s ease;
+}
+
+
+.btn-horarios {
+	width: 120px;
+	height: auto;
+	position: absolute;
+	left: 400px;
+	top: 10px;
+}
+
+.btn-horarios ul {
+	list-style: none;
+}
+
+.btn-horarios ul a {
+	width: 86px;
+	height: 24px;
+	position: relative;
+	padding: 0.5em 1.2em;
+	transition: .5s ease;
+	text-decoration: none;
+	color: #fff4f4;
+	font-size: 16px;
+}
+
+.btn-horarios ul li a:hover {
+	font-size: 16px;
+	color: #292a3a;
+	background: #fff4f4;
+	border-radius: 4px;
+	padding-bottom: 4px;
+}
+
+.btn-horarios ul ul {
+	display: none;
+}
+
+.btn-horarios ul li:hover>ul {
+	background: #292a3a;
+	display: block;
+	border-radius: 3px;
+	height: 55px;
+}
+
+.btn-horarios ul ul li a {
+	height: 25px;
+	position: relative;
+	transition: all .5s ease;
+	text-decoration: none;
+	color: #fff4f4;
+	font-size: 9px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.btn-horarios ul ul li a:hover {
+	font-size: 10px;
+	color: #292a3a;
+	background: #fff4f4;
+	border-radius: 4px;
+	padding: 4px;
+
+}
+
+.btn-nosotros {
+	width: 180px;
+	height: 30px;
+	position: absolute;
+	left: 536px;
+	top: 10px;
+}
+
+.btn-n {
+	width: 141px;
+	height: 24px;
+	position: relative;
+	padding: 0.5em 1.2em;
+	transition: all 1s ease;
+}
+
+.btn-contacto {
+	width: 120px;
+	height: 30px;
+	position: absolute;
+	left: 736px;
+	top: 10px;
+}
+
+.btn-c {
+	width: 90px;
+	height: 24px;
+	position: relative;
+	padding: 0.5em 1.2em;
+	transition: all 1s ease;
+}
+
+/*--------------> CSS de las redes sociales <---------*/
+.redes-sociales {
+	box-shadow: 0px 4px 4px #292a3a;
+	width: 200px;
+	height: 35px;
+	position: relative;
+	left: 937px;
+	top: 25px;
+	text-align: end;
+}
+
+.redes-sociales a {
+	text-decoration: none;
+}
+
+.bi-facebook,
+.bi-instagram,
+.bi-linkedin,
+.bi-youtube {
+	width: 35px;
+	height: 25px;
+	color: #fff4f4;
+}
+
+/*--------------> CSS de Idioma <---------*/
+.selector-idiomas {
+	position: relative;
+	float: right;
+	margin-right: 75px;
+}
+
+.letter-idioma {
+	color: #fff4f4;
+	left: 0px;
+	font-family: Poppins;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.cont-selector-idioma {
+	background-color: #292a3a;
+	display: flex;
+	left: 72px;
+
+}
+
+#idiomas-pages {
+	background-color: ;
+	height: 27px;
+	display: inline-block;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	color: #292a3a;
+	border-radius: 3px;
+	transition: all 0.25s ease;
+}
+
+#idiomas-pages:hover {
+	color: #fff4f4;
+	background-color: #e1523d;
+}
+
+/*--------------> CSS del Header <---------*/
+.header-center {
+	width: 100%;
+	height: 432px;
+	background-image: url(../images/header.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.text-bienvenida {
+	color: #0c1b39;
+	height: 92px;
+	position: relative;
+	left: 0px;
+	top: 100px;
+	text-align: center;
+	font-size: 64px;
+	font-weight: 300;
+}
+
+.text-bienvenida p {
+	text-align: center;
+}
+
+.btn-inscribete {
+	background-color: #e1523d;
+	width: 241px;
+	height: 56px;
+	position: relative;
+	left: 610px;
+	top: 200px;
+	border-radius: 6px;
+	transition: all 1s ease;
+	font-weight: 300;
+
+}
+
+.btn-ins {
+	color: #fff4f4;
+	width: 201px;
+	height: 36px;
+	position: relative;
+	left: 20px;
+	top: 10px;
+	font-size: 24px;
+	transition: all 1s ease;
+}
+
+.btn-ins a {
+	text-decoration: none;
+	color: #fff4f4;
+}
+
+.btn-ins a:hover {
+	color: #292a3a;
+}
+
+.btn-inscribete:hover {
+	background-color: #fff4f4;
+	width: 241px;
+	height: 56px;
+	border-radius: 6px;
+	border: 2px solid #e1523d;
+}
+
+.btn-ins:hover {
+	color: #292a3a;
+}
+
+/*------------------------> CSS del Contenedor Principal <--------------------*/
+.container-principal {
+	width: 100%;
+}
+
+
+.barra-separacion-servicios {
+	background-color: #fff4f4;
+	width: 100%;
+	height: 146px;
+	left: 0px;
+	top: 532px;
+	text-align: center;
+}
+
+.text-barra-sep {
+	color: #292a3a;
+	font-size: 40px;
+	top: 35px;
+}
+
+/*-------------------> CSS de linea roja <------------------*/
+.linea-1 {
+	background-color: #e1523d;
+	width: 50%;
+	height: 15px;
+	max-width: 200px;
+	padding: 0;
+	margin: 30px auto 10px auto;
+}
+
+/*-------------------> CSS de Imagenes de páginas <------------------*/
+.container-image-link-pages {
+	background-image: url(../images/container_imagenes.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	width: 100%;
+	margin: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius: 3px;
+}
+
+.container-image-link-pages .imagenes-gim {
+	width: 30%;
+	position: relative;
+	height: 200px;
+	margin: 20px 0px 25px 0px;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.imagenes-gim img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.imagenes-gim h3 {
+	color: #fff4f4;
+	font-size: 30px;
+	font-weight: 300;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	text-align: center;
+}
+
+/*--------------------------> CSS de Anuncio con formulario <-----------------*/
+.anuncio-publicitario {
+	background-color: #292a3a;
+	width: 100%;
+	height: 500px;
+	position: absolute;
+}
+
+.cont-textos-publi {
+	width: 951px;
+	height: 342px;
+	position: absolute;
+	left: 244px;
+	top: 25px;
+}
+
+.linea-2 {
+	background-color: #e1523d;
+	width: 50%;
+	height: 15px;
+	max-width: 200px;
+	padding: 0;
+	margin: 10px auto 10px auto;
+}
+
+
+.cont-textos-top {
+	color: #fff4f4;
+	width: 673px;
+	height: 36px;
+	position: absolute;
+	font-size: 24px;
+}
+
+.cont-textos-centro {
+	color: #fff4f4;
+	width: 951px;
+	height: 196px;
+	position: absolute;
+	top: 73px;
+	font-size: 24px;
+}
+
+.cont-textos-end {
+	color: #fff4f4;
+	width: 920px;
+	height: 36px;
+	position: absolute;
+	top: 260px;
+	font-size: 24px;
+}
+
+.cont-input-inscribete {
+	width: 100%;
+	height: 76px;
+	position: absolute;
+	left: 244px;
+	top: 358px;
+}
+
+.Email {
+	background-color: #fff4f4;
+	width: 435px;
+	height: 45px;
+	position: absolute;
+	left: 0px;
+	top: 28px;
+	border-radius: 5px;
+}
+
+.btn-inscribete-ahora {
+	background-color: #e1523d;
+	color: #fff4f4;
+	width: 285px;
+	height: 48px;
+	display: inline-block;
+	cursor: pointer;
+	left: 20px;
+	top: 10px;
+	font-size: 24px;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s;
+	margin-left: 460px;
+	margin-top: 28px
+}
+
+input::placeholder {
+	color: red;
+	font-size: 1.2em;
+	font-style: italic;
+	padding-left: 10px;
+}
+
+.btn-inscribete-ahora:hover {
+	background-color: #fff4f4;
+	color: #292a3a;
+	border-color: #e1523d;
+}
+
+.imag {
+	width: 100%;
+	height: 560px;
+}
+
+/*---------------------------------> CSS Footer <---------------------------------------*/
+.Container-footer {
+	background-color: #292a3a;
+	margin-top: 5em;
+	width: 100%;
+	height: 300px;
+	position: relative;
+	left: 0px;
+	overflow: hidden;
+}
+
+.redes-sociales-footer {
+	width: 200px;
+	height: 35px;
+	position: absolute;
+	top: 30px;
+	margin-left: 20px;
+}
+
+.redes-sociales-footer a {
+	text-decoration: none;
+}
+
+.acceso-contacto {
+	color: #fff4f4;
+	position: absolute;
+	left: 337px;
+	top: 35px;
+	text-align: left;
+	font-size: 28px;
+	text-align: center;
+}
+
+.acceso-contacto a {
+	color: #e1523d;
+	font-size: 28px;
+}
+
+.acceso-contacto a:hover {
+	color: #fff4f4;
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.logo-footer {
+	height: 150px;
+	position: absolute;
+	left: 579px;
+	top: 100px;
+}
+
+.logo-footer img {
+	/*width: 220x;*/
+	height: 150px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.Nav-footer {
+	margin: 260px 0px 10px 0px;
+}
+
+.Nav-footer ul {
+	list-style: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.Nav-footer ul a {
+	color: #fff4f4;
+	text-decoration: none;
+	margin: 0 20px 0 20px;
+}
+
+.Nav-footer ul li a:hover {
+	background-color: #fff4f4;
+	color: #292a3a;
+	border-radius: 3px;
+	font-weight: 300;
+	font-size: 18px;
+}
